@@ -91,6 +91,10 @@ class LinkedList:
         if not self.__is_not_null():
             return False
         
+        if self.length() == 1:
+            self.head = None
+
+        
         self.head = self.head.next                                  #type: ignore
 
     def remove_by_value(self, value):
